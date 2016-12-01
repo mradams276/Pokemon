@@ -23,6 +23,7 @@ public class PokeFrame extends JFrame
 		this.setContentPane(appPanel);
 		this.setTitle("hot diggity dog");
 		this.setVisible(true);
+		
 	}
 
 }

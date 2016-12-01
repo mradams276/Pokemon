@@ -1,6 +1,50 @@
 package poke.view;
 
-public class PokePanel
+import javax.swing.JButton;
+import poke.controller.PokeController;
+import javax.swing.JPanel;
+import java.awt.Color;
+import javax.swing.SpringLayout;
+import java.awt.event.ActionListener;
+import java.awt.event.ActionEvent;
+
+
+public class PokePanel extends JPanel
 {
+	private PokeController pokeController;
+	private SpringLayout baseLayout;
+	private JButton updateButton;
+	private JComboBox pokedexSelector;
+	private JLabel pokemonLabel;
+	private JLabel healthLabel;
+	private JLabel combatLabel;
+	private JLabel speedLabel;
+	private JLabel nameLabel;
+	private JLabel numberLabel;
+	private JLabel advancedLabel;
+	private JTextField healthField;
+	private JTextField combatField;
+	private JTextField speedField;
+	private JTextField nameField;
+	private JTextField numberField;
+	private JTextArea advancedArea;
+	
+	public PokePanel(PokeController baseController)
+	{
+		super();
+		this.baseController = baseController;
+		baseLayout = new SpringLayout();
+		
+		setupPanel();
+		setupLayout();
+		setupListeners();
+	}
+	
+	private void setupPanel()
+	{
+		this.setLayout(baseLayout);
+		this.setPreferredSize(new Dimension(900, 600));
+		numberField.setEditable(false);
+	}
 
 }
