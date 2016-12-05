@@ -1,10 +1,8 @@
 package poke.view;
 
-import javax.swing.JButton;
+import javax.swing.*;
 import poke.controller.PokeController;
-import javax.swing.JPanel;
 import java.awt.Color;
-import javax.swing.SpringLayout;
 import java.awt.event.ActionListener;
 import java.awt.event.ActionEvent;
 
@@ -46,5 +44,17 @@ public class PokePanel extends JPanel
 		this.setPreferredSize(new Dimension(900, 600));
 		numberField.setEditable(false);
 	}
+	
+	private void setupLayout()
+	{
+		
+	}
+	
+	private void setupListeners()
+	{
+		
+	}
+	
+	
 
 }
