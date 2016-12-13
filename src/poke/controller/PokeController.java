@@ -26,7 +26,11 @@ public class PokeController
 	
 	private void buildPokedex()
 	{
-		
+		pokedex.add(new MrMime("Creepy"));
+		pokedex.add(new JigglyPuff("Fat Lard"));
+		pokedex.add(new Diglet("Nobbly Bob"));
+		pokedex.add(new Venoasur("It's just a plant"));
+		pokedex.add(new Pikachu("Best pokemun eevar!"))
 	}
 
 }
