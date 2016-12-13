@@ -9,7 +9,7 @@ import java.awt.event.MouseEvent;
 import java.awt.event.MouseMotionListener;
 
 	public class PokePanel extends JPanel {
-	private PokeController pokeController;
+	private PokeController baseController;
 	private SpringLayout baseLayout;
 	private JButton updateButton;
 	private JComboBox pokedexSelector;
@@ -27,7 +27,8 @@ import java.awt.event.MouseMotionListener;
 	private JTextField numberField;
 	private JTextArea advancedArea;
 
-	public PokePanel(PokeController baseController) {
+	public PokePanel(PokeController baseController) 
+	{
 		super();
 		this.baseController = baseController;
 		baseLayout = new SpringLayout();

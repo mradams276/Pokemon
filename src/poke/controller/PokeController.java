@@ -30,7 +30,7 @@ public class PokeController
 		pokedex.add(new JigglyPuff("Fat Lard"));
 		pokedex.add(new Diglet("Nobbly Bob"));
 		pokedex.add(new Venoasur("It's just a plant"));
-		pokedex.add(new Pikachu("Best pokemun eevar!"))
+		pokedex.add(new Pikachu("Best pokemun eevar!"));
 	}
 
 }
